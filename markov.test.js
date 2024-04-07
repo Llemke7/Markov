@@ -6,6 +6,7 @@ describe('MarkovMachine', () => {
       const text = "the cat in the hat";
       const mm = new MarkovMachine(text);
       const generatedText = mm.makeText(5); // Generate text with 5 words
+      console.log(generatedText);
       const words = generatedText.split(' ');
       expect(words.length).toBe(5);
     });
